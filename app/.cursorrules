@@ -1,0 +1,46 @@
+## Component Guidelines
+
+### ShadCN Components
+
+- 모든 UI 컴포넌트는 ShadCN을 사용해야 합니다.
+- 컴포넌트 사용 전 설치 여부를 확인해야 합니다: `/components/ui` 디렉토리 체크
+- 컴포넌트 설치 명령어를 사용해야 합니다: `npx shadcn@latest add [component-name]`
+  - 주의: `npx shadcn-ui@latest add` 명령어는 deprecated. 반드시 `npx shadcn@latest add` 사용해야 합니다
+
+### Icons
+
+- 모든 아이콘은 Lucide React를 사용해야 합니다
+- 아이콘 임포트 방법: `import { IconName} from "lucide-react"`
+- 예시: `import { Search, Menu } from "lucide-react"`
+
+### Component Structure
+
+- 컴포넌트는 `/components` 디렉토리 내에 위치해야 합니다
+- UI 컴포넌트는 `/components/ui` 디렉토리에 위치해야 합니다
+- 페이지별 컴포넌트는 `/app` 디렉토리 내 해당 라우트에 위치해야 합니다
+
+## Best Practices
+
+- TypeScript 타입은 반드시 정의해야 합니다
+- 컴포넌트는 재사용 가능하도록 설계해야 합니다
+
+
+1. 버그 수정:
+   - 해결책을 제안하기 전에 문제를 철저히 분석하기
+   - 정확하고 대상이 명확한 해결책 제공하기
+   - 버그의 근본 원인 설명하기
+
+2. 단순함 유지:
+   - 가독성과 유지보수성 우선시하기
+   - 과도한 엔지니어링 솔루션 피하기
+   - 가능한 표준 라이브러리와 패턴 사용하기
+
+3. 코드 변경:
+   - 변경 전 명확한 계획 제안하기
+   - 모든 수정사항을 한 번에 단일 파일에 적용하기
+   - 관련 없는 파일 변경하지 않기
+
+4. 코드 주석:
+   - 모든 함수와 변수에 주석 추가하기
+   - 복잡한 알고리즘 설명하기
+   - 중요한 비즈니스 로직 설명하기
